@@ -6,6 +6,5 @@ target 'PresentationTimer' do
   use_frameworks!
 
   # Pods for PresentationTimer
-  pod 'RealmSwift'
 
 end
