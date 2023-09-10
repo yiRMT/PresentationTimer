@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BD4FE19BB367A42DD196068 /* Pods_PresentationTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA50EB658DAE1C3C4F27454 /* Pods_PresentationTimer.framework */; };
 		671EA4A4295777CC00D615A5 /* PresentationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EA4A3295777CC00D615A5 /* PresentationListView.swift */; };
 		671EA4A62957AB3500D615A5 /* AddPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EA4A52957AB3500D615A5 /* AddPresentationView.swift */; };
 		671EA4A82957ABDB00D615A5 /* PresentationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EA4A72957ABDB00D615A5 /* PresentationListViewModel.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13BB1CDAD365C27DE2405833 /* Pods-PresentationTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTimer.debug.xcconfig"; path = "Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		671EA4A3295777CC00D615A5 /* PresentationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationListView.swift; sourceTree = "<group>"; };
 		671EA4A52957AB3500D615A5 /* AddPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresentationView.swift; sourceTree = "<group>"; };
 		671EA4A72957ABDB00D615A5 /* PresentationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationListViewModel.swift; sourceTree = "<group>"; };
@@ -37,8 +35,6 @@
 		6722B34128C123DC002E9B7D /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		67A3FA73290ACA0F00774EB6 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		67FF2B4A28C1288500C16A63 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		936543C5D0E6047E2C74B5EB /* Pods-PresentationTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTimer.release.xcconfig"; path = "Target Support Files/Pods-PresentationTimer/Pods-PresentationTimer.release.xcconfig"; sourceTree = "<group>"; };
-		BDA50EB658DAE1C3C4F27454 /* Pods_PresentationTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentationTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +44,6 @@
 			files = (
 				676B07C72AAD4B0F00186C4D /* RealmSwift in Frameworks */,
 				676B07C52AAD4B0F00186C4D /* Realm in Frameworks */,
-				3BD4FE19BB367A42DD196068 /* Pods_PresentationTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +82,6 @@
 				6722B33028BFBFDD002E9B7D /* PresentationTimer */,
 				6722B32F28BFBFDD002E9B7D /* Products */,
 				C8B380F22FF4876C467DE779 /* Pods */,
-				E3D27E2F4D32E49F5D93E5CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,18 +120,8 @@
 		C8B380F22FF4876C467DE779 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				13BB1CDAD365C27DE2405833 /* Pods-PresentationTimer.debug.xcconfig */,
-				936543C5D0E6047E2C74B5EB /* Pods-PresentationTimer.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E3D27E2F4D32E49F5D93E5CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BDA50EB658DAE1C3C4F27454 /* Pods_PresentationTimer.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +131,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6722B33C28BFBFDE002E9B7D /* Build configuration list for PBXNativeTarget "PresentationTimer" */;
 			buildPhases = (
-				0EACB9CFAED2F0320B06EAA7 /* [CP] Check Pods Manifest.lock */,
 				6722B32A28BFBFDD002E9B7D /* Sources */,
 				6722B32B28BFBFDD002E9B7D /* Frameworks */,
 				6722B32C28BFBFDD002E9B7D /* Resources */,
@@ -190,7 +173,7 @@
 			);
 			mainGroup = 6722B32528BFBFDD002E9B7D;
 			packageReferences = (
-				676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift" */,
+				676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift.git" */,
 			);
 			productRefGroup = 6722B32F28BFBFDD002E9B7D /* Products */;
 			projectDirPath = "";
@@ -212,31 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0EACB9CFAED2F0320B06EAA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PresentationTimer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6722B32A28BFBFDD002E9B7D /* Sources */ = {
@@ -374,7 +332,6 @@
 		};
 		6722B33D28BFBFDE002E9B7D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13BB1CDAD365C27DE2405833 /* Pods-PresentationTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +363,6 @@
 		};
 		6722B33E28BFBFDE002E9B7D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 936543C5D0E6047E2C74B5EB /* Pods-PresentationTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,7 +416,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -473,12 +429,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		676B07C42AAD4B0F00186C4D /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = Realm;
 		};
 		676B07C62AAD4B0F00186C4D /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 676B07C32AAD4B0F00186C4D /* XCRemoteSwiftPackageReference "realm-swift.git" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
