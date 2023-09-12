@@ -7,7 +7,11 @@
 
 import Foundation
 
-class PresentationListViewModel: ObservableObject {
+final class PresentationListViewModel: ObservableObject {
     @Published var isShowAddView = false
     static let shared = PresentationListViewModel()
+    
+    private init(isShowAddView: Bool = false) {
+        self.isShowAddView = isShowAddView
+    }
 }
