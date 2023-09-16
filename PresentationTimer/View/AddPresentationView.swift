@@ -17,6 +17,7 @@ struct AddPresentationView: View {
             }
             Section(header: Text("Description")) {
                 TextField("", text: .constant("Description"))
+                    .multilineTextAlignment(.leading)
             }
         }
         .navigationTitle("ToDoを追加")

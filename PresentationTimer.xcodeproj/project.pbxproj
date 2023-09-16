@@ -16,6 +16,8 @@
 		6722B33928BFBFDE002E9B7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6722B33828BFBFDE002E9B7D /* Preview Assets.xcassets */; };
 		6722B34028BFC5E2002E9B7D /* StopwatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722B33F28BFC5E2002E9B7D /* StopwatchManager.swift */; };
 		6722B34228C123DC002E9B7D /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722B34128C123DC002E9B7D /* CircleProgressView.swift */; };
+		674C73B12AB2246C00BE418C /* AddPresentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C73B02AB2246C00BE418C /* AddPresentationViewModel.swift */; };
+		674C73B32AB2247E00BE418C /* PresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C73B22AB2247E00BE418C /* PresentationModel.swift */; };
 		676B07C52AAD4B0F00186C4D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 676B07C42AAD4B0F00186C4D /* Realm */; };
 		676B07C72AAD4B0F00186C4D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 676B07C62AAD4B0F00186C4D /* RealmSwift */; };
 		67A3FA74290ACA0F00774EB6 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3FA73290ACA0F00774EB6 /* ScheduleView.swift */; };
@@ -33,6 +35,8 @@
 		6722B33828BFBFDE002E9B7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6722B33F28BFC5E2002E9B7D /* StopwatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchManager.swift; sourceTree = "<group>"; };
 		6722B34128C123DC002E9B7D /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		674C73B02AB2246C00BE418C /* AddPresentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresentationViewModel.swift; sourceTree = "<group>"; };
+		674C73B22AB2247E00BE418C /* PresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModel.swift; sourceTree = "<group>"; };
 		67A3FA73290ACA0F00774EB6 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		67FF2B4A28C1288500C16A63 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				671EA4A72957ABDB00D615A5 /* PresentationListViewModel.swift */,
+				674C73B02AB2246C00BE418C /* AddPresentationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -72,6 +77,7 @@
 		671EA4AB2957B7C200D615A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				674C73B22AB2247E00BE418C /* PresentationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,10 +203,12 @@
 				6722B34228C123DC002E9B7D /* CircleProgressView.swift in Sources */,
 				671EA4A4295777CC00D615A5 /* PresentationListView.swift in Sources */,
 				6722B33228BFBFDD002E9B7D /* PresentationTimerApp.swift in Sources */,
+				674C73B12AB2246C00BE418C /* AddPresentationViewModel.swift in Sources */,
 				671EA4A62957AB3500D615A5 /* AddPresentationView.swift in Sources */,
 				67A3FA74290ACA0F00774EB6 /* ScheduleView.swift in Sources */,
 				67FF2B4B28C1288500C16A63 /* Schedule.swift in Sources */,
 				6722B34028BFC5E2002E9B7D /* StopwatchManager.swift in Sources */,
+				674C73B32AB2247E00BE418C /* PresentationModel.swift in Sources */,
 				671EA4A82957ABDB00D615A5 /* PresentationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

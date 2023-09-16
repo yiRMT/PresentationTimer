@@ -11,6 +11,8 @@ final class PresentationListViewModel: ObservableObject {
     @Published var isShowAddView = false
     static let shared = PresentationListViewModel()
     
+    @Published var presentationList: [PresentationModel] = []
+    
     private init(isShowAddView: Bool = false) {
         self.isShowAddView = isShowAddView
     }
