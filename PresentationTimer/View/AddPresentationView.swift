@@ -8,25 +8,30 @@
 import SwiftUI
 
 struct AddPresentationView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         List {
-            Section(header: Text("タイトル")) {
-                TextField("", text: .constant("タイトル"))
+            Section(header: Text("Title")) {
+                TextField("", text: .constant("Title"))
             }
-            Section(header: Text("デスクリプション")) {
-                TextField("", text: .constant("デスクリプション"))
+            Section(header: Text("Description")) {
+                TextField("", text: .constant("Description"))
+                    .multilineTextAlignment(.leading)
             }
         }
         .navigationTitle("ToDoを追加")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
+            ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {print("完了")}) {
                     Text("完了")
                 }
             }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {print("キャンセル")}) {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
                     Text("キャンセル")
                 }
             }
